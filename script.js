@@ -140,6 +140,21 @@
 // let result = randomNumber(random, number);
 // console.log(result);
 
+// Return sum of two numbers
+
+function sum(arg1, arg2) {
+    let a = Number(arg1);
+    let b = Number(arg2);
+     let result ; 
+    result = a+b ;
+    return result;
+
+}
+
+let number1 = prompt("Enter First Number", "0");
+let number2 = prompt("Enter Second Number", "0");
+let result = sum(number1 , number2);
+console.log("Sum of two numbers is =" + result);
 
 
 
