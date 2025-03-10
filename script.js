@@ -142,19 +142,71 @@
 
 // Return sum of two numbers
 
-function sum(arg1, arg2) {
-    let a = Number(arg1);
-    let b = Number(arg2);
-     let result ; 
-    result = a+b ;
-    return result;
+// function sum(arg1, arg2) {
+//     let a = Number(arg1);
+//     let b = Number(arg2);
+//      let result ; 
+//     result = a+b ;
+//     return result;
+
+// }
+
+// let number1 = prompt("Enter First Number", "0");
+// let number2 = prompt("Enter Second Number", "0");
+// let result = sum(number1 , number2);
+// console.log("Sum of two numbers is =" + result);
+
+// CONVERT mINUTES INTO SECONDS
+
+// function minIntoSec(arg) {
+//     let number = arg * 60 ;
+//     return number;
+
+// }
+
+// let mins = prompt("Enter number of minutes to convert into Seconds" , "1");
+// let number = Number(mins);
+// let result = minIntoSec(number);
+// console.log(number +" minutes into seconds are " + result);
+
+// PRINT THE NEXT NUMBER FROM THE INTEGER PASSED 
+
+// function nextNumber(arg) {
+//     let number = arg ;
+//     number++;
+//     return number;
+// }
+// let result = prompt("Enter any Number to get the next Number" , "0");
+// let number = Number(result);        // Number() method converts the string into number;
+// let increment = nextNumber(number);
+// console.log(increment);
+
+// TO FIND AREA OF TRIANGLE
+// function triArea(length, height) {
+//     let area ;
+//     area = (length*height)/2;
+//     return area ;
+
+// }
+// let length = +prompt("Enter length of triangle" ,"1");         // + before prompt converts string into number;
+// let height = +prompt("Enter height of a triangle" ,"1");
+// let result = triArea(length, height);
+// console.log("Area of Triangle is = " + result);
+
+
+// Convert Age to Days 
+function ageToDays(age) {
+    let days ;
+    days = age * 365;
+    return days;
 
 }
 
-let number1 = prompt("Enter First Number", "0");
-let number2 = prompt("Enter Second Number", "0");
-let result = sum(number1 , number2);
-console.log("Sum of two numbers is =" + result);
+let age = +prompt("Enter any age to convert into days" , "1");
+let result = ageToDays(age);
+console.log(age + " years contains " + result + " days");
+
+
 
 
 
