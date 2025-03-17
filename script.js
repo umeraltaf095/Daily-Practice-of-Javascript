@@ -195,16 +195,42 @@
 
 
 // Convert Age to Days 
-function ageToDays(age) {
-    let days ;
-    days = age * 365;
-    return days;
+// function ageToDays(age) {
+//     let days ;
+//     days = age * 365;
+//     return days;
 
+// }
+
+// let age = +prompt("Enter any age to convert into days" , "1");
+// let result = ageToDays(age);
+// console.log(age + " years contains " + result + " days");
+
+// // Find Sum when unknown number of arguments are given 
+// const addNum = (...num1)=> {
+//     let total = 0;
+//     for(let i=0; i<num1.length; i++){
+//         total +=num1[i];
+//     }
+//     return total;
+
+// }
+
+//console.log(addNum(100,250,470));
+
+// Use of this method 
+
+let person = {
+    username: 'Ahmad',
+    age: 24,
+    inform: function(){
+        console.log(`${this.username} , is here`);
+    }
 }
+person.inform();
+person.username='umer';
+person.inform();
 
-let age = +prompt("Enter any age to convert into days" , "1");
-let result = ageToDays(age);
-console.log(age + " years contains " + result + " days");
 
 
 
