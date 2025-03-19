@@ -218,18 +218,70 @@
 
 //console.log(addNum(100,250,470));
 
-// Use of this method 
+// // Use of this method 
 
-let person = {
-    username: 'Ahmad',
-    age: 24,
-    inform: function(){
-        console.log(`${this.username} , is here`);
+// let person = {
+//     username: 'Ahmad',
+//     age: 24,
+//     inform: function(){
+//         console.log(`${this.username} , is here`);
+//     }
+// }
+// person.inform();
+// person.username='umer';
+// person.inform();
+
+
+//Use of forEach loop for array
+const arr =['pakistan', 'usa', 'india', 'dubai'];
+
+arr.forEach( (item) =>{
+    //console.log(item);
     }
+);
+
+//Use of Object.keys to get just keys and Object.entries to get key and values both
+
+const person = {
+    name: 'umer',
+    age: 24,
+    location: 'Lahore'
 }
-person.inform();
-person.username='umer';
-person.inform();
+
+//console.log(Object.keys(person));
+
+//Given an array of numbers, create a new array where each number is doubled.
+
+const num = [1,2,5,8,75,480];
+let arr1 = [];
+
+num.forEach( (item)=> {
+    arr1.push(item+item);
+})
+//console.log(arr1);
+
+// Given an array of names, create new array with each name in uppercase.
+
+const arr2 = ['umer', 'usman', 'ahmad', 'rameez'];
+const arr3 = [];
+
+arr2.forEach( (item)=>{
+    arr3.push(item.toUpperCase());
+} )
+//console.log(arr3);
+
+//Given an array of numbers, count how many numbers are even and print the count.
+
+const arr4 = [2,4,8,7,9,4,6,2,44,5,3];
+let count = 0;
+arr4.forEach( (item)=>{
+     if(item % 2 == 0){
+        count++ ;
+     }
+     return count;
+})
+console.log("The total even number in an array is = " , count);
+
 
 
 
